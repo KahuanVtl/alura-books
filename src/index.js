@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Header from './Componentes/Header';
+import Favoritos from './rotas/Favoritos';
 
 
 const GlobalStyle = createGlobalStyle`
@@ -34,7 +35,7 @@ root.render(
         <BrowserRouter>
           <Header />
             <Routes>
-                <Route path="/favoritos" element={<p>oi</p>} />
+                <Route path="/favoritos" element={<Favoritos />} />
                 <Route path="/" element={<Home />} />
                 
             </Routes>
